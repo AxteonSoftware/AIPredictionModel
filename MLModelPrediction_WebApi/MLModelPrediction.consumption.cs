@@ -97,5 +97,4 @@ public partial class MLModelPrediction
         var predEngine = PredictEngine.Value;
         return predEngine.Predict(input);
     }
-
 }

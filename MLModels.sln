@@ -5,11 +5,11 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLModelPrediction", "MLModelPrediction\MLModelPrediction.csproj", "{87655998-7F6F-4E50-97FD-54353A98F836}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLModelPrediction_WebApi", "MLModelPrediction_WebApi\MLModelPrediction_WebApi.csproj", "{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLModelPrediction_ConsoleApp", "MLModelPrediction_ConsoleApp1\MLModelPrediction_ConsoleApp.csproj", "{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ValuePrediction", "ValuePrediction", "{4A44F300-6B85-4349-8916-D40500804452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLModelPrediction_WebApi", "MLModelPrediction_WebApi\MLModelPrediction_WebApi.csproj", "{C6B0C750-7C0A-6561-5AAA-C80578873A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,21 +21,20 @@ Global
 		{87655998-7F6F-4E50-97FD-54353A98F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87655998-7F6F-4E50-97FD-54353A98F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87655998-7F6F-4E50-97FD-54353A98F836}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6B0C750-7C0A-6561-5AAA-C80578873A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6B0C750-7C0A-6561-5AAA-C80578873A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6B0C750-7C0A-6561-5AAA-C80578873A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6B0C750-7C0A-6561-5AAA-C80578873A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87655998-7F6F-4E50-97FD-54353A98F836} = {4A44F300-6B85-4349-8916-D40500804452}
-		{F1DFEDEB-4D20-4944-8EBD-FFEB60DB7A8A} = {4A44F300-6B85-4349-8916-D40500804452}
 		{CFDC5BEB-B81F-4DB5-8F9A-B2E116E92F14} = {4A44F300-6B85-4349-8916-D40500804452}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

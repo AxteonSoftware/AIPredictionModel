@@ -3,8 +3,8 @@
 
 using MLModelPrediction_ConsoleApp1;
 
-// Create single instance of sample data from first line of dataset for model input
-MLModelPrediction.ModelInput sampleData = new MLModelPrediction.ModelInput()
+//Load sample data
+var sampleData = new MLModelPrediction.ModelInput()
 {
     Vendor_id = @"CMT",
     Passenger_count = 1F,
@@ -12,6 +12,11 @@ MLModelPrediction.ModelInput sampleData = new MLModelPrediction.ModelInput()
     Trip_distance = 1.5F,
     Payment_type = @"CRD",
 };
+
+//Load model and predict output
+var result = MLModelPrediction.Predict(sampleData);
+
+
 
 
 

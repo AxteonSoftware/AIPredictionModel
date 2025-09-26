@@ -1,8 +1,13 @@
 ﻿{
   "Scenario": "Regression",
   "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": true,
     "Type": "TabularFile",
-    "Version": 1,
     "FilePath": "C:\\Users\\48503\\source\\repos\\MLModels\\MLModelPrediction\\DataSource\\taxi-fare-train.csv",
     "Delimiter": ",",
     "DecimalMarker": ".",
@@ -14,7 +19,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "passenger_count",
@@ -22,7 +27,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "trip_time_in_secons",
@@ -30,7 +35,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "trip_distance",
@@ -38,7 +43,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "payment_type",
@@ -46,7 +51,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       },
       {
         "ColumnName": "fare_amount",
@@ -54,7 +59,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 4
+        "Version": 5
       }
     ]
   },
@@ -502,9 +507,10 @@
     "ModelFilePath": "C:\\Users\\48503\\source\\repos\\MLModels\\MLModelPrediction\\MLModelPrediction.mlnet"
   },
   "Type": "TrainingConfig",
-  "Version": 4,
+  "Version": 5,
   "TrainingOption": {
-    "Version": 1,
+    "Version": 2,
+    "Subsampling": false,
     "Type": "RegressionTrainingOption",
     "TrainingTime": 20,
     "LabelColumn": "fare_amount",
