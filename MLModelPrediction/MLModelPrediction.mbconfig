@@ -75,8 +75,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "LightGbmRegression",
-        "Score": 0.8965289190406559,
-        "RuntimeInSeconds": 2.165,
+        "Score": 0.90118165714295451,
+        "RuntimeInSeconds": 2.076,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e5",
           "e0": {
@@ -113,12 +113,122 @@
           },
           "e5": {
             "NumberOfLeaves": 4,
-            "MinimumExampleCountPerLeaf": 21,
-            "LearningRate": 0.99999977667298645,
-            "NumberOfTrees": 1408,
+            "MinimumExampleCountPerLeaf": 24,
+            "LearningRate": 0.35963469387261554,
+            "NumberOfTrees": 1173,
+            "SubsampleFraction": 0.86124051018591141,
+            "MaximumBinCountPerFeature": 512,
+            "FeatureFraction": 0.9919873217235593,
+            "L1Regularization": 7.519854881282379E-10,
+            "L2Regularization": 0.16469966023140675,
+            "LabelColumnName": "fare_amount",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.90002013128516445,
+        "RuntimeInSeconds": 1.464,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "vendor_id",
+              "payment_type"
+            ],
+            "InputColumnNames": [
+              "vendor_id",
+              "payment_type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ],
+            "InputColumnNames": [
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "vendor_id",
+              "payment_type",
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.4622676358631117,
+            "NumberOfTrees": 349,
             "SubsampleFraction": 0.99999977667298645,
-            "MaximumBinCountPerFeature": 238,
-            "FeatureFraction": 0.98478430811496953,
+            "MaximumBinCountPerFeature": 341,
+            "FeatureFraction": 0.985349468933797,
+            "L1Regularization": 2.4594398081467827E-10,
+            "L2Regularization": 0.9466098602722508,
+            "LabelColumnName": "fare_amount",
+            "FeatureColumnName": "Features"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LightGbmRegression",
+        "Score": 0.898042106751751,
+        "RuntimeInSeconds": 1.114,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e5",
+          "e0": {
+            "OutputColumnNames": [
+              "vendor_id",
+              "payment_type"
+            ],
+            "InputColumnNames": [
+              "vendor_id",
+              "payment_type"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ],
+            "InputColumnNames": [
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ]
+          },
+          "e2": {
+            "InputColumnNames": [
+              "vendor_id",
+              "payment_type",
+              "passenger_count",
+              "trip_time_in_secons",
+              "trip_distance"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e5": {
+            "NumberOfLeaves": 1820,
+            "MinimumExampleCountPerLeaf": 20,
+            "LearningRate": 0.59419007900878729,
+            "NumberOfTrees": 4,
+            "SubsampleFraction": 0.99999977667298645,
+            "MaximumBinCountPerFeature": 226,
+            "FeatureFraction": 0.97871161614403479,
             "L1Regularization": 2E-10,
             "L2Regularization": 0.99999977667298645,
             "LabelColumnName": "fare_amount",
@@ -130,8 +240,8 @@
         "Version": 1,
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
-        "Score": 0.87869587147843042,
-        "RuntimeInSeconds": 0.283,
+        "Score": 0.88040726400740621,
+        "RuntimeInSeconds": 0.339,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e4",
           "e0": {
@@ -167,7 +277,7 @@
             "OutputColumnName": "Features"
           },
           "e4": {
-            "NumberOfTrees": 5,
+            "NumberOfTrees": 9,
             "NumberOfLeaves": 4,
             "FeatureFraction": 1.0,
             "LabelColumnName": "fare_amount",
@@ -180,7 +290,7 @@
         "Type": "Trial",
         "TrainerName": "FastForestRegression",
         "Score": 0.87481878486532039,
-        "RuntimeInSeconds": 0.856,
+        "RuntimeInSeconds": 1.299,
         "Parameter": {
           "_SCHEMA_": "e0 * e1 * e2 * e4",
           "e0": {
@@ -218,104 +328,6 @@
           "e4": {
             "NumberOfTrees": 4,
             "NumberOfLeaves": 4,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "fare_amount",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestRegression",
-        "Score": 0.87481878486532039,
-        "RuntimeInSeconds": 0.346,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e4",
-          "e0": {
-            "OutputColumnNames": [
-              "vendor_id",
-              "payment_type"
-            ],
-            "InputColumnNames": [
-              "vendor_id",
-              "payment_type"
-            ]
-          },
-          "e1": {
-            "OutputColumnNames": [
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ],
-            "InputColumnNames": [
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ]
-          },
-          "e2": {
-            "InputColumnNames": [
-              "vendor_id",
-              "payment_type",
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e4": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 4,
-            "FeatureFraction": 1.0,
-            "LabelColumnName": "fare_amount",
-            "FeatureColumnName": "Features"
-          }
-        }
-      },
-      {
-        "Version": 1,
-        "Type": "Trial",
-        "TrainerName": "FastForestRegression",
-        "Score": 0.87481878486532039,
-        "RuntimeInSeconds": 0.276,
-        "Parameter": {
-          "_SCHEMA_": "e0 * e1 * e2 * e4",
-          "e0": {
-            "OutputColumnNames": [
-              "vendor_id",
-              "payment_type"
-            ],
-            "InputColumnNames": [
-              "vendor_id",
-              "payment_type"
-            ]
-          },
-          "e1": {
-            "OutputColumnNames": [
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ],
-            "InputColumnNames": [
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ]
-          },
-          "e2": {
-            "InputColumnNames": [
-              "vendor_id",
-              "payment_type",
-              "passenger_count",
-              "trip_time_in_secons",
-              "trip_distance"
-            ],
-            "OutputColumnName": "Features"
-          },
-          "e4": {
-            "NumberOfTrees": 4,
-            "NumberOfLeaves": 5,
             "FeatureFraction": 1.0,
             "LabelColumnName": "fare_amount",
             "FeatureColumnName": "Features"
