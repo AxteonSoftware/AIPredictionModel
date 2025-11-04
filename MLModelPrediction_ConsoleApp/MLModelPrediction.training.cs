@@ -11,7 +11,7 @@ using Microsoft.ML.Trainers;
 using Microsoft.ML.Trainers.LightGbm;
 using Microsoft.ML.Transforms;
 
-namespace MLModelPrediction
+namespace MLModelPrediction_ConsoleApp
 {
     public partial class MLModelPrediction
     {

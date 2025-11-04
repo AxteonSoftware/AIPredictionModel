@@ -10,9 +10,6 @@ using Microsoft.ML.Data;
 using Microsoft.ML.Trainers;
 using Microsoft.ML.Trainers.LightGbm;
 using Microsoft.ML.Transforms;
-
-namespace MLModelPrediction
-{
     public partial class MLModelPrediction
     {
         public const string RetrainFilePath =  @"C:\Users\48503\source\repos\AIPredictionModel\MLModelPrediction\DataSource\taxi-fare-train.csv";
@@ -99,4 +96,4 @@ namespace MLModelPrediction
             return pipeline;
         }
     }
- }
+ 
